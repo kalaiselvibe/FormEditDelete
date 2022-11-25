@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crud with pure javascript</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <table>
+        <tr><td>
+            <form onsubmit="event.preventDefault();onFormSubmit();"autocomplete="off" >
+            <div>
+                <label>fullname</label><label class="validation-error hide" id="fullnameValidationError">this field is required</label>
+            <input type="text" name="fullname" id="fullname">
+        </div>
+            <div>
+                <label>empcode</label>
+                 <input type="text" name="empcode" id="empcode">
+            </div>
+            <div>
+                <label>salary</label>
+                <input type="text" name="salary" id="salary">
+            </div>
+            <div>
+                <label>city</label>
+                <input type="text" name="city" id="city">
+            </div>
+            <div class="form-action-buttons">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+        </td>
+    <td>
+        <table class="list" id="employeeList">
+            <thead>
+                <tr>
+                    <th>fullname</th>
+                    <th>empcode</th>
+                    <th>salary</th>
+                    <th>city</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </td>
+    </tr>
+    </table>
+    <script src="./form.js"></script>
+</body>
+</html>
